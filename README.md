@@ -1,4 +1,3 @@
-
 PiCAST turns your $35 Raspberry Pi in to a Chromecast like Device.
 =
 
@@ -83,3 +82,9 @@ map        LONGTEXT    N/A         None         N/A         N/A       N/A     N/
 complete   TEXT        N/A         None         N/A         N/A       N/A     N/A  
 
 3.3). Click Save to create Database
+
+API USEAGE
+=
+
+Website Launcher
+>http://localhost/goCAST.php?website=google.com
