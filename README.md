@@ -112,6 +112,7 @@ map        LONGTEXT    N/A         None         N/A         N/A       N/A     N/
 3.3). Click Save to create Database
 
 **** GET PiCAST READY ****
+
 1). Move goCAST.php & grabCAST.php to /var/www as we did in HTTPD Test (above). I recommend making a directory.
 
 2). CHMOD grabber.sh (Keep in Personal Home Directory)
