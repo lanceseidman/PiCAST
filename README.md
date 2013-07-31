@@ -1,5 +1,15 @@
-PiCAST turns your $35 Raspberry Pi in to a Chromecast like Device.
+PiCAST<h2>$35 Raspberry Pi in to a Chromecast like Device.</h2>
 =
+
+<h3><u>Why Make the PiCAST?</u></h3>
+I wanted to buy a Google Chromecast but it was sold out, thanks to people like Leo from TWiT who got 5 (kidding)!
+So, I thought what do I have that I could use w/HDMI [licensing] and wouldn't be terribly hard to do? My Arduino?
+Nope BUT my Raspberry Pi can do it all, literally and same price as the Chromecast.
+
+<h3><u>Why Open Source?</u></h3>
+I'm not happy how the Chromecast isn't very open... So, with the easy to use API-like calling, you can just call the URL
+and yes the project is far from complete-- it's just a fun learning exercise & hope kids will see how you can go and
+try to mimmic what you can't get it (even if you have the cash).
 
 **** SETUP NEEDED ****
 
@@ -86,3 +96,9 @@ API USEAGE
 
 Website Launcher
 >http://localhost/goCAST.php?website=google.com
+
+Image Launcher
+>http://localhost/goCAST.php?image=flickr.com/path-to-image.ext
+
+Google Map Launcher (no-GPS; web based)
+>http://localhost/goCAST.php?map=-36.22,136.12
