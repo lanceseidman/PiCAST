@@ -9,7 +9,7 @@ mysql_select_db("<sql_table>", $res);
 // MAKE QUERY FOR SELECTING ITEMS (0 Min. Max. 1)
 $query = "SELECT * FROM `Items` LIMIT 0, 1 "; 
 
-$which = $res;
+$which = $res; 
 $sth = mysql_query($query,$which);
 
 while($row = mysql_fetch_assoc($sth))
