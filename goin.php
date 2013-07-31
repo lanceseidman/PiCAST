@@ -1,2 +1,0 @@
-# THIS MUST BE IN /var/www
-<CODES TO COME SHORTLY...>
