@@ -1,5 +1,7 @@
-PiCAST<h2>$35 Raspberry Pi in to a Chromecast like Device.</h2>
-=
+PiCAST
+===
+<h3>Turn a $35 Raspberry Pi in to a Chromecast like Device, for FREE.</h3>
+<hr>
 
 <h3><u>Why Make the PiCAST?</u></h3>
 I wanted to buy a Google Chromecast but it was sold out, thanks to people like Leo from TWiT who got 5 (kidding)!
@@ -10,6 +12,24 @@ Nope BUT my Raspberry Pi can do it all, literally and same price as the Chromeca
 I'm not happy how the Chromecast isn't very open... So, with the easy to use API-like calling, you can just call the URL
 and yes the project is far from complete-- it's just a fun learning exercise & hope kids will see how you can go and
 try to mimmic what you can't get it (even if you have the cash).
+
+<b>This is far from complete. Lot of new features to come and of course fix the code up. But, at least we have something
+to start playing with...</b>
+
+<h3><u>Donate with BitCoin!</u></h3>
+A friend of mine has already bugged me, to charge for the code... I can't or won't. I will however as always offer my
+BitCoin address for anyone who'd like to donate to keep my doggy happy & me filled with Coffee.
+
+<b>BitCoin Address: 16b3QAFmjrh4yzHjLw7jAKG5AnV8WVXdCK</b>
+
+<b>No BitCoin? PayPal: lance@compulsivetech.biz</b>
+
+*** YOU DO NOT HAVE TO DONATE. THIS IS OF COURSE COMPLETELY OPTIONAL, THIS WILL ALWAYS REMAIN FREE! ***
+
+<h3><u>Watch it in Action!</u></h3>
+Video not Online; Visit http://www.youtube.com/TechMeShow for my other Tech Videos.
+
+<hr><h2>Get Started!</h2>
 
 **** SETUP NEEDED ****
 
@@ -96,6 +116,8 @@ API USEAGE
 
 Website Launcher
 >http://localhost/goCAST.php?website=google.com
+
+*** COMMANDS BELOW NOT ACTIVE YET... HOLD ON! ***
 
 Image Launcher
 >http://localhost/goCAST.php?image=flickr.com/path-to-image.ext
