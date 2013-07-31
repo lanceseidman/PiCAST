@@ -42,7 +42,7 @@ Video not Online; Visit http://www.youtube.com/TechMeShow for my other Tech Vide
 > sudo apt-get install libapache2-mod-php5 php5 php-pear php5-xcache
 
 3). Install MySQL
-
+ 
 > sudo apt-get install php5-mysql
 
 > sudo apt-get install mysql-server mysql-client
