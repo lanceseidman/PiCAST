@@ -14,15 +14,18 @@ $sth = mysql_query($query,$which);
 
 while($row = mysql_fetch_assoc($sth))
 {
-  // LET'S SEE IF WEBSITES EXIST...
-  if($row['website'] == null)
+	if($row['website'] == null)
 	{
 	  // For Debug: echo "No Website...";
 	}
 	else // Website Exists!
 	{
-      // THIS WILL BE OUTPUT IN PLAINTEXT FOR RUNNING
-       echo $row['website']; 
+	   // OUTPUT WEBSITE URL FOR PICAST
+           echo $row['website'];
+           // CREATE QUERY TO DELETE ENTRY
+	   $order = "ALTER TABLE Items DROP website";
+	   // GO SEND THE DELETE
+	   mysql_query($order, $res);	
 	}
 }
 
