@@ -6,8 +6,8 @@
 #                                                                       #
 #########################################################################
 
-content=$(wget http://localhost/goin.php -q -0 -)
-for WORKS in $content
+content=$(wget http://localhost/grabCAST.php -q -0 -)
+for WORKS in "$content"
 do
 command $WORKS
 done
