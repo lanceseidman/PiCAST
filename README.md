@@ -79,8 +79,6 @@ image      LONGTEXT    N/A         None         N/A         N/A       N/A     N/
 
 map        LONGTEXT    N/A         None         N/A         N/A       N/A     N/A  
 
-complete   TEXT        N/A         None         N/A         N/A       N/A     N/A  
-
 3.3). Click Save to create Database
 
 API USEAGE
