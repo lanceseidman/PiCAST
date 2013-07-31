@@ -23,7 +23,7 @@ while($row = mysql_fetch_assoc($sth))
 	   // OUTPUT WEBSITE URL FOR PICAST
            echo $row['website'];
            // CREATE QUERY TO DELETE ENTRY
-	   $order = "ALTER TABLE Items DROP website";
+	   $order = "DELETE FROM `Items` WHERE 1";
 	   // GO SEND THE DELETE
 	   mysql_query($order, $res);	
 	}
