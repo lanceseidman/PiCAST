@@ -1,7 +1,7 @@
 #!/bin/sh
 #########################################################################
 #                                                                       #
-# THIS IS THE GRABBER. THIS WILL GRAB THE WEB FILE GOIN.PHP AND RUN THE #
+# THIS IS THE GRABBER. THIS WILL GRAB THE WEB PHP FILE AND RUN THE      #
 # COMMANDS WE SEND TO THE PI VIA API...                                 #
 #                                                                       #
 #########################################################################
