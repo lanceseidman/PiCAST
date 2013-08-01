@@ -28,6 +28,7 @@ BitCoin address for anyone who'd like to donate to keep my doggy happy & me fill
 
 <h3><u>Watch it in Action!</u></h3>
 https://www.youtube.com/watch?v=HUgbCoORkYM
+<iframe width="420" height="315" src="//www.youtube.com/embed/HUgbCoORkYM" frameborder="0" allowfullscreen></iframe>
 
 <hr><h2>Get Started!</h2>
 
