@@ -27,7 +27,7 @@ BitCoin address for anyone who'd like to donate to keep my doggy happy & me fill
 *** YOU DO NOT HAVE TO DONATE. THIS IS OF COURSE COMPLETELY OPTIONAL, THIS WILL ALWAYS REMAIN FREE! ***
 
 <h3><u>Watch it in Action!</u></h3>
-Video not Online; Visit http://www.youtube.com/TechMeShow for my other Tech Videos.
+https://www.youtube.com/watch?v=HUgbCoORkYM
 
 <hr><h2>Get Started!</h2>
 
