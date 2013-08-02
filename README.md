@@ -130,6 +130,9 @@ API USEAGE
 Website Launcher
 >http://localhost/goCAST.php?website=google.com
 
+YouTube Video Launcher (Added 08/02/13)
+>http://localhost/goCAST.php?youtube=<video_id>
+
 *** COMMANDS BELOW NOT ACTIVE YET... HOLD ON! ***
 
 Image Launcher
