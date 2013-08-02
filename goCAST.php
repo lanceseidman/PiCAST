@@ -15,6 +15,12 @@ if($_GET["website"])
  //Debug: echo 'Found Website, going to process it!";
 }
 
+if($_GET["youtube"]) 
+{
+ $youtube = $_GET["youtube"];
+ //Debug: echo "Found YT Video!";
+}
+
 if($_GET["image"]) 
 {
  $image = $_GET["image"];
