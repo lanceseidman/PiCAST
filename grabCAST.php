@@ -34,13 +34,15 @@ while($row = mysql_fetch_assoc($sth))
 	}
 	else // Website Exists!
 	{
-        echo $row['youtube'];
+        echo "midori -e Fullscreen -a http://localhost/youtube.php?youtube=". $row['youtube'];
 
-           // CREATE QUERY TO DELETE ENTRY
+        // CREATE QUERY TO DELETE ENTRY
 	   $order = "DELETE FROM `Items` WHERE 1";
 	   // GO SEND THE DELETE
-	   mysql_query($order, $res)
+	   mysql_query($order, $res);
+
 	}
+
 
 }
 
