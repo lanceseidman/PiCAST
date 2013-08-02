@@ -27,6 +27,21 @@ while($row = mysql_fetch_assoc($sth))
 	   // GO SEND THE DELETE
 	   mysql_query($order, $res);	
 	}
+	
+	if($row['youtube'] == null)
+	{
+	  // For Debug: echo "No YouTube Video...";
+	}
+	else // Website Exists!
+	{
+        echo $row['youtube'];
+
+           // CREATE QUERY TO DELETE ENTRY
+	   $order = "DELETE FROM `Items` WHERE 1";
+	   // GO SEND THE DELETE
+	   mysql_query($order, $res)
+	}
+
 }
 
 /* JSON OPTION
