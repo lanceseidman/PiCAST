@@ -39,7 +39,7 @@ if($image . $map . $music)
 ** CODE TO BE FINISHED IN NEXT VERSION! */
 
 // CREATE SQL QUERY FOR DATABASE
-$query = "INSERT INTO `vsweb_picast`.`Items` (`ID`, `website`, `image`, `map`) VALUES (NULL, '$website', '$image', '$map');";
+$query = "INSERT INTO `vsweb_picast`.`Items` (`ID`, `website`, `image`, `map`, `youtube`) VALUES (NULL, '$website', '$image', '$map', '$youtube');";
 $which = $res;
 // PERFORM THE INSERT IN TO PiCAST DATABASE
 $sth = mysql_query($query,$which);
