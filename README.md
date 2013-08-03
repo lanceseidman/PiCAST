@@ -34,6 +34,9 @@ https://www.youtube.com/watch?v=HUgbCoORkYM
 
 **** SETUP NEEDED ****
 
+0). Update the Database!
+> sudo apt-get update
+
 1). Install Apache2
 
 > sudo apt-get install apache2 apache2-utils
@@ -55,6 +58,12 @@ Enter a root Password (DO NOT FORGET; CASE-SENSITIVE)
 > sudo apt-get install phpmyadmin
 
 Select apache 2 >> Press OK 
+
+5). Install Gnash (Flash Support for Midori) - For Flash, WebM Support
+
+> sudo apt-get gnash
+
+Want to know more about Gnash + Flash? I have a video on YouTube.com/TechMeShow
 
 -------------------------------------------------------------------------------------
 
@@ -109,6 +118,8 @@ website    LONGTEXT    N/A         None         N/A         N/A       N/A     N/
 image      LONGTEXT    N/A         None         N/A         N/A       N/A     N/A  
 
 map        LONGTEXT    N/A         None         N/A         N/A       N/A     N/A  
+
+youtube    TEXT        N/A         None         N/A         N/A       N/A     N/A  
 
 3.3). Click Save to create Database
 
