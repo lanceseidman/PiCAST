@@ -18,7 +18,7 @@ to start playing with...</b>
 
 <h3><u>Donate with BitCoin!</u></h3>
 A friend of mine has already bugged me, to charge for the code... I can't or won't. I will however as always offer my
-BitCoin address for anyone who'd like to donate to keep my doggy happy & me filled with Coffee.
+BitCoin address for anyone who'd like to donate, donations will go to Opportunity Village(http://www.opportunityvillage.org).
 
 <b>BitCoin Address: 16b3QAFmjrh4yzHjLw7jAKG5AnV8WVXdCK</b>
 
