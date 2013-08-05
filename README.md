@@ -100,6 +100,7 @@ your settings or ensure you're not blocking Port 80 or ensure that's the correct
 > CREATE USER 'picast'@'localhost' IDENTIFIED BY 'piCAST1337';
 
 2). Create new Database (e.g. picast)
+> CREATE DATABASE picast;
 
 3). Add User to new Database w/FULL Privledges
 > GRANT ALL PRIVILEGES ON picast . Items TO 'picast'@'localhost';
