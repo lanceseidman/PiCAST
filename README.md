@@ -103,6 +103,7 @@ your settings or ensure you're not blocking Port 80 or ensure that's the correct
 
 3). Add User to new Database w/FULL Privledges
 > GRANT ALL PRIVILEGES ON picast . Items TO 'picast'@'localhost';
+
 > FLUSH PRIVLEGES;
 
 **** PHPMYADMIN ****
