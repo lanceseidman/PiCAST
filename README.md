@@ -65,6 +65,11 @@ Select apache 2 >> Press OK
 
 Want to know more about Gnash + Flash? I have a video on YouTube.com/TechMeShow
 
+6). Remote Mouse Control
+> sudo apt-get synergy
+
+Windows (64/32), Mac OSX, & Linux Clients at: http://synergy-foss.org
+
 -------------------------------------------------------------------------------------
 
 **** TEST HTTPD + PHP ****
