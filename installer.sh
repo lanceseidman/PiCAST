@@ -42,5 +42,18 @@ echo "PiCAST is installing everything you need..."
 sudo aptitude install -y $reqApps
 
 # COPY EVERYTHING FOR PICAST
+clear # clear the screen
+echo "Congratulations! WE got everything & Setup is almost Done!"
+echo ""
+echo "I'm going to download missing parts now..."
+echo ""
+
+# WE'LL USE GITHUB TO PROPERLY GRAB LATEST MASTER FILES
+git clone https://github.com/lanceseidman/PiCAST.git
+sudo mv PiCAST /var/www/ # Let's move it!
+sudo rm -rf /var/www/PiCAST/installer.sh # Don't want/need this anymore!
+sudo rm -rf /var/www/PiCAST/netflix # Remove till this works!
+sudo rm -rf /var/www/PiCAST/music_grooveshark # Remove till this works!
+sudo rename README.md README.txt # Rename for less EU confusion
 
 fi
