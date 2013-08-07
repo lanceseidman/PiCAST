@@ -42,7 +42,18 @@ https://www.youtube.com/watch?v=HUgbCoORkYM
 
 <hr><h2>Get Started!</h2>
 
-**** SETUP NEEDED ****
+<b><h2>**** SETUP NEEDED (BETA) ****</h2></b>
+
+Simply download installer.sh, open a Terminal and type:
+> sh installer.sh
+
+<b>-- MySQL MUST READ --</b>
+
+You will be asked to insert a MySQL Password, this is important. Please type "thePICAST" & confirm when asked.
+
+
+
+*** ADVANCED USERS USE BELOW METHODS ***
 
 0). Update the Database!
 > sudo apt-get update
@@ -63,19 +74,13 @@ https://www.youtube.com/watch?v=HUgbCoORkYM
 
 Enter a root Password (DO NOT FORGET; CASE-SENSITIVE)
 
-4). Install PHPMyAdmin
-
-> sudo apt-get install phpmyadmin
-
-Select apache 2 >> Press OK 
-
-5). Install Gnash (Flash Support for Midori) - For Flash, WebM Support
+4). Install Gnash (Flash Support for Midori) - For Flash, WebM Support
 
 > sudo apt-get gnash
 
 Want to know more about Gnash + Flash? I have a video on YouTube.com/TechMeShow
 
-6). Remote Mouse Control
+5). Remote Mouse Control (Optional)
 > sudo apt-get synergy
 
 Windows (64/32), Mac OSX, & Linux Clients at: http://synergy-foss.org
