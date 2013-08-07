@@ -26,6 +26,16 @@ BitCoin address for anyone who'd like to donate, donations will go to Opportunit
 
 *** YOU DO NOT HAVE TO DONATE. THIS IS OF COURSE COMPLETELY OPTIONAL, THIS WILL ALWAYS REMAIN FREE! ***
 
+<h3><u>LICENSE</u></h3>
+
+PLEASE READ THE LICENSE FILE BEFORE READING ANY CODE, DOWNLOADING CODE, STORING CODE, SHARING CODE, AND USING THE CODE.
+
+AT NO TIME MAY YOU SELL THIS PROGRAM, EVER UNLESS GIVEN EXTENSIVE PERMISSION. YOU MUST LINK TO THIS PROJECT IF YOU
+USE ANY CODE PROVIDED OR PUT THIS PROGRAM ON A RASPBERRY PI, ESPECIALLY IF YOU'RE TRYING TO SELL FOR PROFIT.
+
+<img src="http://www.gnu.org/graphics/gplv3-127x51.png" alt="GPL LOGO" title="GPL LOGO">
+
+
 <h3><u>Watch it in Action!</u></h3>
 https://www.youtube.com/watch?v=HUgbCoORkYM
 <iframe width="420" height="315" src="//www.youtube.com/embed/HUgbCoORkYM" frameborder="0" allowfullscreen></iframe>
