@@ -54,6 +54,6 @@ sudo mv PiCAST /var/www/ # Let's move it!
 sudo rm -rf /var/www/PiCAST/installer.sh # Don't want/need this anymore!
 sudo rm -rf /var/www/PiCAST/netflix # Remove till this works!
 sudo rm -rf /var/www/PiCAST/music_grooveshark # Remove till this works!
-sudo rename README.md README.txt # Rename for less EU confusion
+#sudo rename README.md README.txt # Rename for less EU confusion
 
 fi
