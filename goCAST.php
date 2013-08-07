@@ -2,9 +2,9 @@
 // INSERT ITEMS IN TO PiCAST DB
 
 // CONNECT TO YOUR DB
-$res = mysql_connect("localhost","<sql_username>","<sql_password>");
+$res = mysql_connect("localhost","piCASTER","piCAST1337");
 // CONNECT SELECT THE DB
-mysql_select_db("<sql_table>", $res);
+mysql_select_db("picasts", $res);
 
 // DOES THE WEBSITE TAG EXIST?
 if($_GET["website"])  
