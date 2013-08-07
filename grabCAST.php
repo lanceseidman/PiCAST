@@ -2,9 +2,9 @@
 // GRAB PiCAST
 
 // CONNECT TO YOUR DB
-$res = mysql_connect("localhost","<sql_username>","<sql_password>");
+$res = mysql_connect("localhost","piCASTER","piCAST1337");
 // CONNECT SELECT THE DB
-mysql_select_db("<sql_table>", $res);
+mysql_select_db("picasts", $res);
 
 // MAKE QUERY FOR SELECTING ITEMS (0 Min. Max. 1)
 $query = "SELECT * FROM `Items` LIMIT 0, 1 "; 
