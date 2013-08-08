@@ -44,8 +44,11 @@ https://www.youtube.com/watch?v=HUgbCoORkYM
 <b><h2>**** SETUP NEEDED (BETA) ****</h2></b>
 
 Simply download installer.sh, open a Terminal and type:
+
 > chmod +x installer.sh
+
 > sh installer.sh
+
 
 <b>-- MySQL MUST READ --</b>
 
