@@ -41,6 +41,17 @@ echo "Go Play! Go Watch TV/YouTube, just don't touch!"
 echo "PiCAST is installing everything you need..."
 sudo aptitude install -y $reqApps
 
+# SETUP MYSQL
+clear
+echo "We need to setup MySQL, I will help you..."
+echo "------------------------------------------"
+echo "Please type the MySQL Password (Hint: thePICAST)"
+# MAKE DATABASE
+sudo mysql -uroot -pthePICAST "CREATE USER 'picast'@'localhost' IDENTIFIED BY 'piCAST1337';"
+sudo mysql -uroot -pthePICAST "CREATE DATABASE picaster;"
+sudo mysql -uroot -pthePICAST "GRANT ALL PRIVILEGES ON picast . Items TO 'picast'@'localhost';"
+sudo mysql -uroot -pthePICAST "FLUSH PRIVLEGES;"
+
 # COPY EVERYTHING FOR PICAST
 clear # clear the screen
 echo "Congratulations! WE got everything & Setup is almost Done!"
