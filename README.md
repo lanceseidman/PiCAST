@@ -89,6 +89,25 @@ Want to know more about Gnash + Flash? I have a video on YouTube.com/TechMeShow
 
 ** WINDOWS: Visit http://sourceforge.net/projects/xming
 
+1). Install successfully & run.
+
+2). In PuTTY Configure to connect to the PiCAST Server.
+
+2a). Select Session: Connection Type SSH & Type Hostname/IP
+
+2b). Select Connection>X11>Enable X11 Forwarding.
+
+2c). Select Connection>X11>display location: localhost:0
+
+2d). Select Connection>X11>XDM-Authorization
+
+2e). Click on the 'Open' Button
+
+3). After you login, type anything you wish to load for control (e.g. Midori).
+
+** OSX: Open Terminal, type: xhost + PiCAST_ServerName (Only first time!!!) & connect, type:
+> ssh -X user-name@PiCAST_ServerName
+
 -------------------------------------------------------------------------------------
 
 **** TEST HTTPD + PHP ****
