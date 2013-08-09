@@ -83,10 +83,11 @@ Enter a root Password (DO NOT FORGET; CASE-SENSITIVE)
 
 Want to know more about Gnash + Flash? I have a video on YouTube.com/TechMeShow
 
-5). Remote Mouse Control (Optional)
-> sudo apt-get synergy
+5). Remote Control of Pi -- UPDATED ON 08/08/13
 
-Windows (64/32), Mac OSX, & Linux Clients at: http://synergy-foss.org
+> sudo apt-get install xdm
+
+** WINDOWS: Visit http://sourceforge.net/projects/xming
 
 -------------------------------------------------------------------------------------
 
