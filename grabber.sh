@@ -6,7 +6,9 @@
 #                                                                       #
 #########################################################################
 
-content=$(wget http://localhost/grabCAST.php -q -0 -)
+#content=$(wget http://localhost/grabCAST.php -q -0 -)
+# We're going to try cURL for awhile...
+content=$(curl -L http://localhost/PiCAST/grabCAST.php)
 for WORKS in "$content"
 do
 command $WORKS
