@@ -47,9 +47,9 @@ echo "We need to setup MySQL, I will help you..."
 echo "------------------------------------------"
 echo "Please type the MySQL Password (Hint: thePICAST)"
 # MAKE DATABASE
-sudo mysql -uroot -pthePICAST "CREATE USER 'picast'@'localhost' IDENTIFIED BY 'piCAST1337';"
-sudo mysql -uroot -pthePICAST "CREATE DATABASE picaster;"
-sudo mysql -uroot -pthePICAST "GRANT ALL PRIVILEGES ON picast . Items TO 'picast'@'localhost';"
+sudo mysql -uroot -pthePICAST "CREATE DATABASE picaster";
+sudo mysql -uroot -pthePICAST "CREATE USER 'picast'@'localhost' IDENTIFIED BY 'piCAST1337'";
+sudo mysql -uroot -pthePICAST "GRANT ALL PRIVILEGES ON picast . Items TO 'picast'@'localhost'";
 sudo mysql -uroot -pthePICAST "FLUSH PRIVLEGES;"
 
 # COPY EVERYTHING FOR PICAST
