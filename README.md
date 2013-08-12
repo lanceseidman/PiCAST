@@ -1,4 +1,4 @@
-PiCAST
+PiCAST (beta)
 ===
 <h3>Turn a $35 Raspberry Pi in to a Chromecast like Device, for FREE.</h3>
 <hr>
@@ -13,8 +13,10 @@ I'm not happy how the Chromecast isn't very open... So, with the easy to use API
 and yes the project is far from complete-- it's just a fun learning exercise & hope kids will see how you can go and
 try to mimmic what you can't get it (even if you have the cash).
 
-<b>This is far from complete. Lot of new features to come and of course fix the code up. But, at least we have something
+<b>This is <i>far</i> from complete. Lot of new features to come and of course fix the code up. But, at least we have something
 to start playing with...</b>
+
+<h1>USE AT OWN RISK. UPDATES ARE CONSTANT. METHODS <B><u>WILL</u></B> CHANGE OFTEN! UNLESS SOMETHING SAYS STABLE, ASSUME A BETA.</h1>
 
 <h3><u>Donate with BitCoin!</u></h3>
 A friend of mine has already bugged me, to charge for the code... I can't or won't. I will however as always offer my
@@ -77,13 +79,15 @@ You will be asked to insert a MySQL Password, this is important. Please type "th
 
 Enter a root Password (DO NOT FORGET; CASE-SENSITIVE)
 
-4). Install Gnash (Flash Support for Midori) - For Flash, WebM Support
+4). Install Gnash (Flash Support for Midori) - For Flash, WebM Support (OPTIONAL)
 
 > sudo apt-get gnash
 
+> sudo apt-get install browser-plugin-gnash 
+
 Want to know more about Gnash + Flash? I have a video on YouTube.com/TechMeShow
 
-5). Remote Control of Pi -- UPDATED ON 08/08/13
+5). Remote Control of Pi (OPTIONAL)
 
 > sudo apt-get install xdm
 
@@ -119,16 +123,16 @@ Want to know more about Gnash + Flash? I have a video on YouTube.com/TechMeShow
 your settings or ensure you're not blocking Port 80 or ensure that's the correct port.
 
 2). Open Terminal (any) and type:
->sudo pico test.php & press [Enter].
+> sudo pico test.php & press [Enter].
 
 2.1). Type
-><?php phpinfo(); ?> & press Ctrl + X, press Y, press [Enter].
+> <?php phpinfo(); ?> & press Ctrl + X, press Y, press [Enter].
 
 2.2). Type:
->sudo cp test.php /var/www/test.php & press [Enter].
+> sudo cp test.php /var/www/PiCAST/test.php & press [Enter].
 
 3). In Midori, type:
->http://localhost/test.php
+> http://localhost/PiCAST/test.php
 
 ** If it shows PHP install details, it was successful.
 
@@ -173,7 +177,7 @@ youtube    TEXT        N/A         None         N/A         N/A       N/A     N/
 
 **** GET PiCAST READY ****
 
-1). Move goCAST.php & grabCAST.php to /var/www as we did in HTTPD Test (above). I recommend making a directory.
+1). Move goCAST.php & grabCAST.php to /var/www/PiCAST as we did in HTTPD Test (above). I recommend making a directory.
 
 2). CHMOD grabber.sh (Keep in Personal Home Directory)
 > sudo chmod +x grabber.sh & press [Enter]
@@ -187,17 +191,12 @@ API USEAGE
 =
 
 Website Launcher
->http://localhost/goCAST.php?website=google.com
+> http://localhost/PiCAST/goCAST.php?website=google.com
 
 YouTube Video Launcher (Added 08/02/13)
->http://localhost/goCAST.php?youtube=video_id
+> http://localhost/PiCAST/goCAST.php?youtube=video_id
 
 *** Soon we will parse the URL in the goCAST.php.
 
-*** COMMANDS BELOW NOT ACTIVE YET... HOLD ON! ***
+*** MORE COMMANDS TO COME... HOLD ON! ***
 
-Image Launcher
->http://localhost/goCAST.php?image=flickr.com/path-to-image.ext
-
-Google Map Launcher (no-GPS; web based)
->http://localhost/goCAST.php?map=-36.22,136.12
