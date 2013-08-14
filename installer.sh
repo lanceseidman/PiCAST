@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/sh
 # INSTALLER/SCRIPT CANNOT BE EDITED NOR DUPLICATED FOR ANY PROJECT.
 
 # COLOR RED (Use if Root User)
@@ -6,7 +6,7 @@ clrRED="\033[0;31m"
 # CLEAR COLOR
 clrCLEAN="\033[0m"
 # REQUIRED
-reqApps="apache2 apache2 apache2-utils libapache2-mod-php5 php5 php-pear php5-xcache php5-mysql mysql-server mysql-client gnash synergy"
+reqApps="apache2 apache2 apache2-utils libapache2-mod-php5 php5 php-pear php5-xcache php5-mysql mysql-server mysql-client gnash synergy git-core"
 
 # START CHECK OF ROOT LOGIN (NO COMPLETED)
 if [ $(whoami) = "root" ]
