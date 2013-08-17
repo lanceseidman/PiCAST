@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/sh
 # INSTALLER/SCRIPT CANNOT BE EDITED NOR DUPLICATED FOR ANY PROJECT.
 
 # COLOR RED (Use if Root User)
@@ -6,7 +6,7 @@ clrRED="\033[0;31m"
 # CLEAR COLOR
 clrCLEAN="\033[0m"
 # REQUIRED
-reqApps="apache2 apache2 apache2-utils libapache2-mod-php5 php5 php-pear php5-xcache php5-mysql mysql-server mysql-client mplayer mplayer-gui youtube-dl synergy"
+reqApps="apache2 apache2 apache2-utils libapache2-mod-php5 php5 php-pear php5-xcache php5-mysql mysql-server mysql-client mplayer mplayer-gui youtube-dl git-core"
 
 # START CHECK OF ROOT LOGIN (NO COMPLETED)
 if [ $(whoami) = "root" ]
@@ -98,7 +98,18 @@ echo "You can now run PiCAST from the folder picast in your user folder!"
 sleep 3
 echo "To run the service, simply type: "
 echo "watch -n xx sh grabber.sh (replace xx with amount of seconds)."
-sleep 4
-echo "Good luck!"
+sleep 3
+
+# ASK IF synergy IS DESIRED
+echo "Would you like to install synergy to use your Mouse/Keyboard?"
+echo "Type 'y' if you'd like it or to cancel press any key..."
+read RESP
+if [ "$RESP" = "y" ]; then
+sudo apt-get install synergy -y
+else
+echo "Synergy WON'T be installed..."
+fi
+sleep 2
+echo "Good luck! You're done!"
 
 fi
