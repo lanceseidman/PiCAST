@@ -8,6 +8,22 @@ I wanted to buy a Google Chromecast but it was sold out, thanks to people like L
 So, I thought what do I have that I could use w/HDMI [licensing] and wouldn't be terribly hard to do? My Arduino?
 Nope BUT my Raspberry Pi can do it all, literally and same price as the Chromecast.
 
+<h3>THIS ISN'T CHROMECAST! YOU LIE!!!</h3>
+As many seem unable to read or understand where the project CURRENTLY is and where it WILL go, I felt I need to dumb it
+down even more. This project doesn't have over 20-100+ paid-staffers, millions of dollars backed to ensure it succeeds, 
+a dedicated team, and MONTHS & MONTHS of work where the PiCAST HAS NONE OF THE ABOVE-- so, calm down!
+
+I made it very clear, this is "LIKE" a chromecast project, already as it can be sent commands REMOTELY just like the 
+Chromecast, so project is over... Kidding! I am working on the BEST possible method(s) to continue forward, like 
+taking away "Streaming" via HTML5 & using pre-existing tools to "hack" YouTube Code and Download files locally to
+then easily launch the video with less lag BUT music is coming too...
+
+So before you go nuts that the project isn't what YOU think, think twice. I do have a full-time job BUT I am so
+upset with Google, I want an OPEN, FREE, US/NON-US PERMITTED USERBASE, and if you're against it? Don't download it,
+go make your own and share it or don't. I live in the US, I can now get a Chromecast, I don't NEED the project BUT
+I want it as I feel so strongly that what Google is doing is beyond unfair-- agree? JOIN ME! STOP YOUR COMPLAINT, DO
+SOMETHING!
+
 <h3><u>Why Open Source?</u></h3>
 I'm not happy how the Chromecast isn't very open... So, with the easy to use API-like calling, you can just call the URL
 and yes the project is far from complete-- it's just a fun learning exercise & hope kids will see how you can go and
