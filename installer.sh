@@ -6,7 +6,7 @@ clrRED="\033[0;31m"
 # CLEAR COLOR
 clrCLEAN="\033[0m"
 # REQUIRED
-reqApps="apache2 apache2 apache2-utils libapache2-mod-php5 php5 php-pear php5-xcache php5-mysql mysql-server mysql-client youtube-dl synergy"
+reqApps="apache2 apache2 apache2-utils libapache2-mod-php5 php5 php-pear php5-xcache php5-mysql mysql-server mysql-client mplayer mplayer-gui youtube-dl synergy"
 
 # START CHECK OF ROOT LOGIN (NO COMPLETED)
 if [ $(whoami) = "root" ]
