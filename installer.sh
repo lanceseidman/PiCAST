@@ -93,6 +93,15 @@ sudo chmod +x /home/$USER/picast/grabber.sh
 #sudo rm -rf /var/www/PiCAST/netflix # Remove till this works!
 #sudo rm -rf /var/www/PiCAST/music_grooveshark # Remove till this works!
 #sudo rename README.md README.txt # Rename for less EU confusion
+echo "Done..."
+sleep 2
+clear
+echo "Going to Download GrooveShark Downloader..."
+sleep 2
+git clone https://github.com/jacktheripper51/groove-dl.git
+sudo mv groove-dl /home/$USER/picast
+echo "GrooveShark Downloader Complete..."
+pause 2
 
 echo "You can now run PiCAST from the folder picast in your user folder!"
 sleep 3
