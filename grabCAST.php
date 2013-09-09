@@ -1,60 +1,27 @@
 <?php
-// GRAB PiCAST
+require_once(realpath(dirname(__FILE__).DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR.'configuration.php');
+require_once(realpath(dirname(__FILE__).DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR.'db.php');
 
-// CONNECT TO YOUR DB
-$res = mysql_connect("localhost","piCASTER","piCAST1337");
-// CONNECT SELECT THE DB
-mysql_select_db("picasts", $res);
+$query = "SELECT * FROM `Items` LIMIT 1 "; 
+ $sth = Database::Reader($query);
 
-// MAKE QUERY FOR SELECTING ITEMS (0 Min. Max. 1)
-$query = "SELECT * FROM `Items` LIMIT 0, 1 "; 
-
-$which = $res; 
-$sth = mysql_query($query,$which);
-
-while($row = mysql_fetch_assoc($sth))
+while($row = Database::Read($sth))
 {
-	if($row['website'] == null)
+	$order = '';
+	if(!is_null($row['website']) && $row['website']!='')
 	{
-	  // For Debug: echo "No Website...";
-	}
-	else // Website Exists!
+           echo $row['website'];	   // OUTPUT WEBSITE URL FOR PICAST
+	}else if(!is_null($row['youtube']) && $row['youtube']!='')
 	{
-	   // OUTPUT WEBSITE URL FOR PICAST
-           echo $row['website'];
-           // CREATE QUERY TO DELETE ENTRY
-	   $order = "DELETE FROM `Items` WHERE 1";
-	   // GO SEND THE DELETE
-	   mysql_query($order, $res);	
-	}
-	
-	if($row['youtube'] == null)
-	{
-	  // For Debug: echo "No YouTube Video...";
-	}
-	else // Website Exists!
-	{
-        echo "midori -e Fullscreen -a http://localhost/youtube.php?youtube=". $row['youtube'];
-
-        // CREATE QUERY TO DELETE ENTRY
-	   $order = "DELETE FROM `Items` WHERE 1";
-	   // GO SEND THE DELETE
-	   mysql_query($order, $res);
-
+           echo $configuration['browser'] .' '. $configuration['youtube']['handler_prefix'] . $row['youtube'];
 	}
 
-
+	$order = "DELETE FROM `Items` WHERE `ID`=".$row['ID'];	
+	Database::NonQuery($order);
 }
 
-/* JSON OPTION
-$rows = array();
-while($r = mysql_fetch_assoc($sth)) {
-    $rows[] = $r;
-}
-print json_encode($rows);
-*/
 
-// CLOSE THE SQL CONNECTION
-mysql_close($res);
+Database::Reset();
+//there's no true reason for this, it will automatically be unload and free on exit
 
 ?>

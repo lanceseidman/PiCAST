@@ -1,55 +1,26 @@
 <?php
-// INSERT ITEMS IN TO PiCAST DB
-
-// CONNECT TO YOUR DB
-$res = mysql_connect("localhost","piCASTER","piCAST1337");
-// CONNECT SELECT THE DB
-mysql_select_db("picasts", $res);
-
-// DOES THE WEBSITE TAG EXIST?
-if($_GET["website"])  
-{
- // IT EXISTS! LET'S STORE IT FOR OUR DATABASE QUERY
- // - WE'LL USE MIDORI AS FULLSCREEN BROWSER...
- $website = "midori -e Fullscreen -a ".$_GET["website"];
- //Debug: echo 'Found Website, going to process it!";
-}
-
-if($_GET["youtube"]) 
-{
- $youtube = $_GET["youtube"];
- //Debug: echo "Found YT Video!";
-}
-
-if($_GET["image"]) 
-{
- $image = $_GET["image"];
- //Debug: echo "Found Image!";
-}
-
-if($_GET["map"]) 
-{
- $map = $_GET["map"];
- //Debug: echo "Found Map!";
-}
-
-if($_GET["music"]) 
-{
- $music = $_GET["music"];
- //Debug: echo "Found Music!";
-}
+// THIS FILES INSERTS ITEMS IN TO PiCAST DB
+require_once(realpath(dirname(__FILE__).DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR.'configuration.php');
+require_once(realpath(dirname(__FILE__).DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR.'db.php');
 
 
-/* MAKE SURE ONLY 1 TASK IS RECEIVED!
-if($image . $map . $music)
-** CODE TO BE FINISHED IN NEXT VERSION! */
+$website = isset($_GET['website']) ? Database::escape(trim($_GET['website'])) : ''; 
+$youtube = isset($_GET['youtube']) ? Database::escape(trim($_GET['youtube'])) : ''; 
+$image =  isset($_GET['image']) ? Database::escape(trim($_GET['image'])) : '';  
+$map = isset($_GET['map']) ? Database::escape(trim($_GET['map'])) : ''; 
+$music = isset($_GET['music']) ? Database::escape(trim($_GET['music'])) : '';
 
 // CREATE SQL QUERY FOR DATABASE
-$query = "INSERT INTO `vsweb_picast`.`Items` (`ID`, `website`, `image`, `map`, `youtube`) VALUES (NULL, '$website', '$image', '$map', '$youtube');";
-$which = $res;
-// PERFORM THE INSERT IN TO PiCAST DATABASE
-$sth = mysql_query($query,$which);
-mysql_close($res);
+$query = 'INSERT INTO `vsweb_picast`.`Items` (`ID`, `website`, `image`, `map`, `youtube`) VALUES '.
+	'(NULL, "'.$website.'", "'.$image.'", "'.$map.'", "'.$youtube.'")';
 
+if ($website || $youtube || $image || $map || $music)
+{ //only save if there's something to save
+	Database::NonQuery($query);
+	Database::Reset();
+	echo json_encode(true);
+}else{
+	echo json_encode(false);
+}
 ?>
 
