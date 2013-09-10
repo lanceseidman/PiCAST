@@ -11,7 +11,7 @@ $map = isset($_GET['map']) ? Database::escape(trim($_GET['map'])) : '';
 $music = isset($_GET['music']) ? Database::escape(trim($_GET['music'])) : '';
 
 // CREATE SQL QUERY FOR DATABASE
-$query = 'INSERT INTO `vsweb_picast`.`Items` (`ID`, `website`, `image`, `map`, `youtube`) VALUES '.
+$query = 'INSERT INTO `Items` (`ID`, `website`, `image`, `map`, `youtube`) VALUES '.
 	'(NULL, "'.$website.'", "'.$image.'", "'.$map.'", "'.$youtube.'")';
 
 if ($website || $youtube || $image || $map || $music)
