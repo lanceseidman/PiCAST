@@ -9,7 +9,7 @@ $configuration['db'] = array(
 	'db' => 'picasts',
 	'user' => 'piCASTER',
 	'pwd' => 'piCAST1337',
-	'port' => 3307,
+	'port' => 3306,
 	'enconding'=> 'utf8',
 	'debug' => false,
 );	
