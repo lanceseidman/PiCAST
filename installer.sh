@@ -64,15 +64,15 @@ sleep 2
 echo "Type MySQL Password if asked (thePICAST). "
 sleep 2
 # MAKE DATABASE
-sudo mysql -uroot -pthePICAST "CREATE DATABASE picaster;"
+sudo mysql -uroot -pthePICAST -e "CREATE DATABASE picaster;"
 sleep 2
 echo "Database Created!"
-sudo mysql -uroot -pthePICAST "CREATE USER 'picast'@'localhost' IDENTIFIED BY 'piCAST1337';"
+sudo mysql -uroot -pthePICAST -e "CREATE USER 'picast'@'localhost' IDENTIFIED BY 'piCAST1337';"
 echo "User Created!"
 sleep 2
-sudo mysql -uroot -pthePICAST "GRANT ALL PRIVILEGES ON picast . Items TO 'picast'@'localhost';"
+sudo mysql -uroot -pthePICAST -e "GRANT ALL PRIVILEGES ON picast . Items TO 'picast'@'localhost';"
 sleep 2
-sudo mysql -uroot -pthePICAST "FLUSH PRIVLEGES;"
+sudo mysql -uroot -pthePICAST -e "FLUSH PRIVLEGES;"
 echo "MySQL setup is Complete!"
 sleep 2
 # COPY EVERYTHING FOR PICAST
