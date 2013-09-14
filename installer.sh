@@ -70,7 +70,7 @@ echo "Database Created!"
 sudo mysql -uroot -pthePICAST -e "CREATE USER 'picast'@'localhost' IDENTIFIED BY 'piCAST1337';"
 echo "User Created!"
 sleep 2
-sudo mysql -uroot -pthePICAST -e "GRANT ALL PRIVILEGES ON picast . Items TO 'picast'@'localhost';"
+sudo mysql -uroot -pthePICAST -e "GRANT ALL PRIVILEGES ON picaster . Items TO 'picast'@'localhost';"
 sleep 2
 sudo mysql -uroot -pthePICAST -e "FLUSH PRIVLEGES;"
 echo "MySQL setup is Complete!"
