@@ -165,11 +165,11 @@ your settings or ensure you're not blocking Port 80 or ensure that's the correct
 1). Create new MySQL User + Password
 > CREATE USER 'picast'@'localhost' IDENTIFIED BY 'piCAST1337';
 
-2). Create new Database (e.g. picast)
-> CREATE DATABASE picast;
+2). Create new Database (e.g. picaster)
+> CREATE DATABASE picaster;
 
 3). Add User to new Database w/FULL Privledges
-> GRANT ALL PRIVILEGES ON picast . Items TO 'picast'@'localhost';
+> GRANT ALL PRIVILEGES ON picaster . Items TO 'picast'@'localhost';
 
 > FLUSH PRIVLEGES;
 
