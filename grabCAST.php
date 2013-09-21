@@ -2,7 +2,7 @@
 // GRAB PiCAST
 
 // CONNECT TO YOUR DB
-$res = mysql_connect("localhost","picast,"piCAST1337");
+$res = mysql_connect("localhost","picast","piCAST1337");
 // CONNECT SELECT THE DB
 mysql_select_db("picaster", $res);
 
