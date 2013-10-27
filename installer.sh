@@ -72,7 +72,7 @@ echo "User Created!"
 sleep 2
 sudo mysql -uroot -pthePICAST -e "GRANT ALL PRIVILEGES ON picaster . Items TO 'picast'@'localhost';"
 sleep 2
-sudo mysql -uroot -pthePICAST -e "FLUSH PRIVLEGES;"
+sudo mysql -uroot -pthePICAST -e "FLUSH PRIVILEGES;"
 echo "MySQL setup is Complete!"
 sleep 2
 # COPY EVERYTHING FOR PICAST
