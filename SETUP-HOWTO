@@ -2,13 +2,13 @@ Welcome to PiCAST 2.0!
 - Setup PiC2.0 - Manual (DO AT YOUR OWN RISK)
 ----------------------------------------------
 
-<h1>Min. Required Features</h1>
+Min. Required Features
 1). Open a Terminal.
  1*). Type: sudo apt-get update (recommended on new Installs/Get Latest Packages; optional)
  1A). Type: sudo aptitude install -y youtube-dl netcat mplayer
  1B). TYpe: sudo youtube-dl -U (highly recommended as YouTube changes its core dev. often)
 
-<h1>Setup Core System</h1>
+Setup Core System
 2). Open a Terminal.
  2A). Type: mv /Path-To-PiCAST/PiCAST /home/$USER (Change how desired BUT remember for alias)
  2B). Type: alias pic_ytvid="sh /home/$USER/PiCAST/youtube/yt-videograb.sh"
