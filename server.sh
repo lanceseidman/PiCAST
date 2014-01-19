@@ -12,12 +12,12 @@ echo "------------------"
 theIP=`/sbin/ifconfig wlan0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'`
 
 if [ $theIP != null ]; then
-echo "To run, please send requests to IP: "$theIP
+echo "To run, please send requests to IP: " $theIP
 echo "+===================================================+"
-echo "Example: pic_ytvideo <URL/VIDEO> |"
+echo "Example: pic_ytvideo <URL/VIDEO> | nc " $theIP
 else
 theIP=`/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'`
-echo "To run, please send requests to IP: "$theIP
+echo "To run, please send requests to IP: " $theIP
 echo "+===================================================+"
-echo "Example: pic_ytvideo <URL/VIDEO> | "
+echo "Example: pic_ytvideo <URL/VIDEO> | nc " $theIP
 fi
