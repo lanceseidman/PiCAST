@@ -59,7 +59,7 @@ read usresp
 if [ "$usresp" = "" ]; then
 echo "You must select a user: "
 read usresp
- if ["$usresp" = "" ]; then
+ if [ "$usresp" = "" ]; then
   echo "OK, Fine... Goodbye!"
   exit
  fi
