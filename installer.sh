@@ -59,7 +59,7 @@ read usresp
 if [ "$usresp" = "" ]; then
 echo "You must select a user: "
 read usresp
- if ["$usresp" = "" ]; then
+ if [ "$usresp" = "" ]; then
   echo "OK, Fine... Goodbye!"
   exit
  fi
@@ -89,6 +89,9 @@ echo "alias pic_ytmusic='sh $usrPATH/PiCAST/youtube/yt-musicgrab.sh'" >> sudo /e
 echo "alias pic_brow-midori='sh $usrPATH/PiCAST/browser/brow-mirori.sh'" >> sudo /etc/bash.bashrc
 echo "... Aliases Done."
 pause 2
+echo "Deleting Installer"
+rm $usrPATH/PiCAST/installer.sh
+pause 1
 echo "Setup looks to be done, even though we had so much fun!"
 echo "......................................................."
 echo "To start the PiCAST Server, simply type: pic-server."
