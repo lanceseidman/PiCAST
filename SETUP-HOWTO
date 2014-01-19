@@ -13,6 +13,6 @@ Setup Core System
  2A). Type: mv /Path-To-PiCAST/PiCAST /home/$USER (Change how desired BUT remember for alias)
  2B). Type: alias pic_ytvid="sh /home/$USER/PiCAST/youtube/yt-videograb.sh"
  2C). Type: alias pic_ytmusic="sh /home/$USER/PiCAST/youtube/yt-musicgrab.sh"
- 2D). Type: alias pic_ytmidori="sh /home/$USER/PiCAST/youtube/yt-midori.sh"
+ - DON'T ADD IN 2.0, YET! 2D). Type: alias pic_ytmidori="sh /home/$USER/PiCAST/youtube/yt-midori.sh"
  2E). Type: alias pic_brow-midori="sh /home/$USER/PiCAST/browser/brow-midori.sh"
  *** Note: Change $USER/PATH to where you placed it if different from above.
