@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 ###########################################
 #					  #
 #       PiCAST 2.0 Installer (base)       #
