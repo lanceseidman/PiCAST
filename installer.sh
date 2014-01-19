@@ -47,23 +47,24 @@ git clone https://github.com/lanceseidman/PiCAST.git
 echo "Received GIT File..."
 clear
 echo "###############################################"
-echo "#    	    PiCAST User Select		    #"
+echo "#    	    PiCAST User Select              #"
 echo "# Please choose a user to install PiCAST to.  #"
 echo "#---------------------------------------------#"
 users 
 echo "###############################################"
-echo "Which user should I setup to: " read usresp
+echo "Which user should I setup to: "
+read usresp
 
 # Let's make sure it isn't a blank response.
 if [ "$usresp" = "" ]; then
-echo "You must select a user: " read usresp
+echo "You must select a user: "
+read usresp
  if ["$usresp" = "" ]; then
   echo "OK, Fine... Goodbye!"
   exit
  fi
-echo "Goodbye"
 exit
-fi
+else
 
 # Let's store the path
 usrPATH="/home/$usresp"
@@ -94,3 +95,4 @@ echo "To start the PiCAST Server, simply type: pic-server."
 echo ""
 echo "                    Have a nice day!"
 exit
+fi
