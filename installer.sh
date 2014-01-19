@@ -18,16 +18,8 @@ echo "############################################"
 # Is the user logged in as root? Hope not!
 if [ $(whoami) = "root" ]
 then
-echo "It's not recommended you run this as root. Are you sure you want to?"
-echo "Type 'Y'es or 'N'o:"
-read response
-
-# Let's see what the user response is...
-if [ "$response" = "n" ]; then
+echo "It's not recommended you run this as root."
 exit
-else
-if [ "$response" = "y"]; then
-echo "You've been warned!"
 fi
 
 # Let's make sure our APT is updated...
@@ -66,10 +58,13 @@ echo "Which user should I setup to: " read usresp
 if [ "$usresp" = "" ]; then
 echo "You must select a user: " read usresp
  if ["$usresp" = "" ]; then
-echo "OK, Fine... Goodbye!"
+  echo "OK, Fine... Goodbye!"
+  exit
+ fi
+echo "Goodbye"
 exit
 fi
-else
+
 # Let's store the path
 usrPATH="/home/$usresp"
 
