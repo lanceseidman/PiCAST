@@ -4,7 +4,7 @@
 # Setup: chmod +x server.sh
 # Start Command: sh /server.sh
 ############################################
-
+ 
 # Port is 2555; Modify for Firewall/Pref.
 
 echo "Welcome to PiCAST!"
