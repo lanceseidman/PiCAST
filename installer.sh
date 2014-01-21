@@ -6,7 +6,7 @@
 #         Written by: Lance Seidman	  #
 #					  #
 ###########################################
-
+ 
 # Let's Create some Variables...
 reqApps="cryptcat youtube-dl mplayer"
 
@@ -49,21 +49,21 @@ fi
 
 # Let's make sure our APT is updated...
 echo "To be safe, let's remove old APT Cache/Configs (password required for sudo)..."
-sudo aptitude clean
+#sudo aptitude clean
 echo "Cleaning done..."
-sudo aptitude purge $OLDCONF
+#sudo aptitude purge $OLDCONF
 echo "Removed configs..."
 echo ".................."
 echo "Let's do a quick update..."
-sudo aptitude update
+#sudo aptitude update
 echo "Done updating APT..."
  
 # Go Request/Install Required Items...
 echo "Requesting required items..."
-sudo aptitude install -y $reqApps
+#sudo aptitude install -y $reqApps
 echo "Done grabbing required items..."
 echo "Preparing YouTube Update (prompts may display, follow them)..."
-sudo youtube-dl -U
+#sudo youtube-dl -U
 echo "Done updating YouTube..."
 
 # GitHub Download/Setup/Install
@@ -84,12 +84,12 @@ read usresp
 if [ "$usresp" = "" ]; then
 echo "You must select a user: "
 read usresp
+
  if [ "$usresp" = "" ]; then
   echo "OK, Fine... Goodbye!"
   exit
  fi
-exit
-else
+fi
 
 # Let's store the path
 usrPATH="/home/$usresp"
@@ -97,7 +97,7 @@ usrPATH="/home/$usresp"
 echo "Starting to transfer files..."
 sudo mv PiCAST $usrPATH/
 echo "... File's transfered to $usrPATH"
-pause 1
+
 sudo chmod +x $usrPATH/PiCAST/youtube/yt-midori.sh
 echo "... Midori Chmodded!"
 sudo chmod +x $usrPATH/PiCAST/youtube/yt-musicgrab.sh
@@ -108,19 +108,47 @@ sudo chmod +x $usrPATH/PiCAST/browser/brow-midori.sh
 echo "... Midori Browser Chmodded!"
 sudo chmod +x $usrPATH/PiCAST/server.sh
 echo "... PiCAST Server Chmodded!"
-pause 1
+
 echo "Completed Git File Download, Transfer, Chmod..."
-pause 2
+
 echo "Setting up Aliases..."
-echo "alias pic_ytvid='sh $usrPATH/PiCAST/youtube/yt-videograb.sh'" >> sudo /etc/bash.bashrc
-echo "alias pic_ytmusic='sh $usrPATH/PiCAST/youtube/yt-musicgrab.sh'" >> sudo /etc/bash.bashrc
-echo "alias pic_brow-midori='sh $usrPATH/PiCAST/browser/brow-mirori.sh'" >> sudo /etc/bash.bashrc
-echo "alias picast='sh $usrPATH/PiCAST/server.sh'" >> sudo /etc/bash.bashrc
+echo "alias pic_ytvid='sh $usrPATH/PiCAST/youtube/yt-videograb.sh'" | sudo tee -a ~/.bashrc
+echo "alias pic_ytmusic='sh $usrPATH/PiCAST/youtube/yt-musicgrab.sh'" | sudo tee -a ~/.bashrc
+echo "alias pic_brow-midori='sh $usrPATH/PiCAST/browser/brow-mirori.sh'" | sudo tee -a ~/.bashrc
+echo "alias picast='sh $usrPATH/PiCAST/server.sh'" | sudo tee -a ~/.bashrc
+echo "alias picast-config='pico $usrPATH/PiCAST/con.cfg'" | sudo tee -a ~/.bashrc
+echo source ~/.bashrc
 echo "... Aliases Done."
-pause 2
+
+clear
+echo "Lets create a secure password for remote PiCAST requests..."
+echo "Type a password (if you forget, type picast-config):"
+read picresp
+
+if [ "$picresp" = "" ]; then
+echo "YOU MUST TYPE IN A PASSWORD, OTHERWISE I WILL BREAK THE INSTALL!"
+echo "Type a password: "
+read picresp
+
+  if [ "$picresp" = "" ]; then
+   echo "Removing your PiCAST Install now... I warned you!"
+   rm -rf $usrPATH/PiCAST
+   echo "PiCAST Deleted. Have a horrible day! ;)"
+   exit
+  fi
+fi
+
+# Let's save the config file. You could do . ~/.con.cfg
+cat >$usrPATH/PiCAST/con.cfg <<EOL
+pass=$picresp
+path=$usrPATH/PiCAST
+EOL
+chmod 664 $usrPATH/PiCAST/con.cfg
+echo "Config File Chmod to 664..."
+
 echo "Deleting Installer"
 rm $usrPATH/PiCAST/installer.sh
-pause 1
+
 echo "Setup looks to be done, even though we had so much fun!"
 echo "......................................................."
 echo "To start the PiCAST Server, simply type: picast."
@@ -130,4 +158,3 @@ echo ""
 echo "If you have any issues? I'm on Twitter: @LanceSeidman"
 echo "                    Have a nice day!"
 exit
-fi
