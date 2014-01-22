@@ -51,6 +51,14 @@ PLEASE READ THE LICENSE FILE BEFORE READING ANY CODE, DOWNLOADING CODE, STORING 
 
 GET THE OLD RELEASE BY GOING THE THE "OLD" BRANCH.
 
+<b><h2>**** SETUP NEEDED (BETA) ****</h2></b>
+
+Simply download installer.sh, open a Terminal and type:
+
+> chmod +x installer.sh
+
+> sh installer.sh
+
 
 <h2>Manual PiCAST 2.0 Setup</h2>
 Looking to manually setup PiCAST 2.x? Look at the Manual (USE AT YOUR OWN RISK!) by visiting:
