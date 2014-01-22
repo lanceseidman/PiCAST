@@ -49,21 +49,21 @@ fi
 
 # Let's make sure our APT is updated...
 echo "To be safe, let's remove old APT Cache/Configs (password required for sudo)..."
-#sudo aptitude clean
+sudo aptitude clean
 echo "Cleaning done..."
-#sudo aptitude purge $OLDCONF
+sudo aptitude purge $OLDCONF
 echo "Removed configs..."
 echo ".................."
 echo "Let's do a quick update..."
-#sudo aptitude update
+sudo aptitude update
 echo "Done updating APT..."
  
 # Go Request/Install Required Items...
 echo "Requesting required items..."
-#sudo aptitude install -y $reqApps
+sudo aptitude install -y $reqApps
 echo "Done grabbing required items..."
 echo "Preparing YouTube Update (prompts may display, follow them)..."
-#sudo youtube-dl -U
+sudo youtube-dl -U
 echo "Done updating YouTube..."
 
 # GitHub Download/Setup/Install
