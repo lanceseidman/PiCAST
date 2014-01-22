@@ -42,7 +42,7 @@ BitCoin address for anyone who'd like to donate, donations will go to Opportunit
 
 <b>No BitCoin? PayPal: lance@compulsivetech.biz</b>
 
-*** YOU DO NOT HAVE TO DONATE. THIS IS OF COURSE COMPLETELY OPTIONAL, THIS WILL ALWAYS REMAIN FREE! ***
+* YOU DO NOT HAVE TO DONATE. THIS IS COMPLETELY OPTIONAL, THIS WILL ALWAYS REMAIN FREE!
 
 <h3><u>LICENSE</u></h3>
 
