@@ -8,7 +8,7 @@
 ###########################################
  
 # Let's Create some Variables...
-reqApps="cryptcat youtube-dl mplayer"
+reqApps="tee cryptcat youtube-dl mplayer"
 
 ### DEV. NOTE ######################################
 # I am using cryptcat and not NC for a little extra
@@ -84,7 +84,7 @@ read usresp
 if [ "$usresp" = "" ]; then
 echo "You must select a user: "
 read usresp
-
+ 
  if [ "$usresp" = "" ]; then
   echo "OK, Fine... Goodbye!"
   exit
@@ -140,8 +140,8 @@ fi
 
 # Let's save the config file. You could do . ~/.con.cfg
 cat >$usrPATH/PiCAST/con.cfg <<EOL
-pass=$picresp
-path=$usrPATH/PiCAST
+$picresp
+$usrPATH/PiCAST
 EOL
 chmod 664 $usrPATH/PiCAST/con.cfg
 echo "Config File Chmod to 664..."
