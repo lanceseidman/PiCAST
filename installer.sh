@@ -143,8 +143,8 @@ cat >$usrPATH/PiCAST/con.cfg <<EOL
 $picresp
 $usrPATH/PiCAST
 EOL
-chmod 664 $usrPATH/PiCAST/con.cfg
-echo "Config File Chmod to 664..."
+chmod 666 $usrPATH/PiCAST/con.cfg
+echo "Config File Chmod to 666..."
 
 echo "Deleting Installer"
 rm $usrPATH/PiCAST/installer.sh
