@@ -8,8 +8,8 @@
 
 ########### Start PiCAST Networking ###########
 # Pi IP/Port (Optional)
-set address "127.0.0.1" # soon...
-set port "8882" # soon...
+address="127.0.0.1"
+port="8882"
 ########### End PiCAST Networking   ###########
 
 #echo "Reading Config File for Settings..."
