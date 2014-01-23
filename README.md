@@ -59,6 +59,10 @@ Simply download installer.sh, open a Terminal and type:
 
 > sh installer.sh
 
+<b>See Howto Download, Setup, Run/CAST the latest PiCAST (Troubleshooting included)</b>
+
+Visit the YouTube Page: http://youtu.be/Wwr201XHDME
+
 
 <h2>Manual PiCAST 2.0 Setup</h2>
 Looking to manually setup PiCAST 2.x? Look at the Manual (USE AT YOUR OWN RISK!) by visiting:
