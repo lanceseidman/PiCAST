@@ -13,7 +13,7 @@ port="8882"
 ########### End PiCAST Networking   ###########
 
 #echo "Reading Config File for Settings..."
-pass=$(awk "NR==1 {print;exit}" ./con.cfg)
+pass=$(awk "NR==1 {print;exit}" con.cfg)
 
 echo "Welcome to PiCAST!"
 echo "------------------"
