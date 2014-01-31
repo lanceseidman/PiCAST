@@ -8,7 +8,7 @@
 ###########################################
  
 # Let's Create some Variables...
-reqApps="tee cryptcat youtube-dl mplayer"
+reqApps="git tee cryptcat youtube-dl mplayer"
 
 ### DEV. NOTE ######################################
 # I am using cryptcat and not NC for a little extra
@@ -62,13 +62,8 @@ echo "Preparing YouTube Update (prompts may display, follow them)..."
 sudo youtube-dl -U
 echo "Done updating YouTube..."
 
-# GitHub Download/Setup/Install
-echo "Going to download the latest PiCAST files..."
-git clone https://github.com/lanceseidman/PiCAST.git
-echo "Received GIT File..."
-clear
 echo "###############################################"
-echo "#    	    PiCAST User Select              #"
+echo "#    	    PiCAST User Select                  #"
 echo "# Please choose a user to install PiCAST to.  #"
 echo "#---------------------------------------------#"
 users 
@@ -90,8 +85,11 @@ fi
 # Let's store the path
 usrPATH="/home/$usresp"
 
+# GitHub Download/Setup/Install
+echo "Going to download the latest PiCAST files..."
+git clone https://github.com/lanceseidman/PiCAST.git
+echo "Received GIT File..."
 echo "Starting to transfer files..."
-sudo mkdir $usrPATH/PiCAST
 sudo mv PiCAST $usrPATH
 echo "... File's transfered to $usrPATH"
 
