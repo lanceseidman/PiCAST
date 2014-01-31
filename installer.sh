@@ -95,8 +95,8 @@ fi
 usrPATH="/home/$usresp"
 
 echo "Starting to transfer files..."
-sudo mkdir PiCAST $usrPATH
-sudo mv PiCAST $usrPATH/
+sudo mkdir $usrPATH/PiCAST
+sudo mv PiCAST $usrPATH
 echo "... File's transfered to $usrPATH"
 
 sudo chmod +x $usrPATH/PiCAST/youtube/yt-midori.sh
