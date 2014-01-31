@@ -40,12 +40,8 @@ echo "#------------------------------------------#"
 echo "# Without further ado, let's get started...#"
 echo "############################################"
 
-# Is the user logged in as root? Hope not!
-if [ $(whoami) = "root" ]
-then
-echo "It's not recommended you run this as root."
-exit
-fi
+# Removed Root Detection. Some installs require SUDO.
+
 
 # Let's make sure our APT is updated...
 echo "To be safe, let's remove old APT Cache/Configs (password required for sudo)..."
