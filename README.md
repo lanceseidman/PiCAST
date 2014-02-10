@@ -1,4 +1,4 @@
-PiCAST 2.0 (beta)
+PiCAST 2.0 (stable)
 ===
 <h3>Turn a $35 Raspberry Pi in to a Chromecast like Device, for FREE.</h3>
 <hr>
