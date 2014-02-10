@@ -22,12 +22,12 @@ theIP=`/sbin/ifconfig wlan0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}
 if [ $theIP != null ]; then
 echo "To CAST, please send requests to IP: " $theIP
 echo "+===================================================+"
-echo "Example: pic_ytvideo <URL/VIDEO> | cryptcat $theIP $port -k picast <pass>"
+echo "Example: pic_ytvideo <URL/VIDEO> | cryptcat $theIP $port -k <pass>"
 else
 theIP=`/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'`
 echo "To CAST, please send requests to IP: " $theIP
 echo "+===================================================+"
-echo "Example: pic_ytvideo <URL/VIDEO> | cryptcat $theIP $port -k picast <pass>"
+echo "Example: pic_ytvideo <URL/VIDEO> | cryptcat $theIP $port -k <pass>"
 fi
 
 # Let's start the process of keeping me ALIVE!
