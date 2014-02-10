@@ -61,6 +61,29 @@ Simply manually download installer.sh (or do as seen below), open a Terminal and
 
 > sh installer.sh
 
+<b><h2>CAST FROM WINDOWS/OSX/LINUX</h2></b>
+The first thing you would need? Is a copy of cryptcat (http://sourceforge.net/projects/cryptcat).
+
+Once you've downloaded, installed and have cryptcat on your system, the process is VERY easy.
+
+1). Open a terminal/console (Windows: CMD in Run will work).
+
+2). Decide will you be sending Video, Audio, etc? Say Video, perform this:
+
+> pic_ytvideo URL/VIDEO | cryptcat PiCAST_IP 8882 -k Password-You-Created
+* NOTE: YOU SHOULD NEVER HAVE ANY "< OR >" IN YOUR COMMAND LINE UNLESS NEEDED.
+
+<b><h2>CAST OPTIONS</h2></b>
+1). Send video from YouTube
+> pic_ytvideo URL/VIDEO (replace w/YOUTUBE VIDEO ID OR URL).
+
+2). Send audio from YouTube
+> pic_ytmusic URL/VIDEO (replace w/YOUTUBE VIDEO ID OR URL).
+
+3). Send website to Midori
+> pic_brow-midori WEBSITE-URL
+
+
 <b>See Howto Download, Setup, Run/CAST the latest PiCAST (Troubleshooting included)</b>
 
 Visit the YouTube Page: http://youtu.be/Wwr201XHDME
