@@ -109,7 +109,7 @@ echo "Completed Git File Download, Transfer, Chmod..."
 echo "Setting up Aliases..."
 echo "alias pic_ytvid='sh $usrPATH/PiCAST/youtube/yt-videograb.sh'" | sudo tee -a ~/.bashrc
 echo "alias pic_ytmusic='sh $usrPATH/PiCAST/youtube/yt-musicgrab.sh'" | sudo tee -a ~/.bashrc
-echo "alias pic_brow-midori='sh $usrPATH/PiCAST/browser/brow-mirori.sh'" | sudo tee -a ~/.bashrc
+echo "alias pic_brow-midori='sh $usrPATH/PiCAST/browser/brow-midori.sh'" | sudo tee -a ~/.bashrc
 echo "alias picast='sh $usrPATH/PiCAST/server.sh'" | sudo tee -a ~/.bashrc
 echo "alias picast-config='pico $usrPATH/PiCAST/con.cfg'" | sudo tee -a ~/.bashrc
 source ~/.bashrc # used to refresh our settings for alises...
