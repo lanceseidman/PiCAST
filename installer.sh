@@ -87,7 +87,7 @@ usrPATH="/home/$usresp"
 
 # GitHub Download/Setup/Install
 echo "Going to download the latest PiCAST files..."
-git clone https://github.com/lanceseidman/PiCAST.git
+git clone -b picast2 https://github.com/lanceseidman/PiCAST.git
 echo "Received GIT File..."
 echo "Starting to transfer files..."
 sudo mv PiCAST $usrPATH
