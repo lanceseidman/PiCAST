@@ -55,7 +55,7 @@ GET THE OLD RELEASE BY GOING THE THE "OLD" BRANCH.
 
 Simply manually download installer.sh (or do as seen below), open a Terminal and type:
 
-> wget https://raw.github.com/lanceseidman/PiCAST/master/installer.sh
+> wget https://raw.githubusercontent.com/lanceseidman/PiCAST/picast2/installer.sh
 
 > chmod +x installer.sh
 
