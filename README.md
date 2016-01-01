@@ -5,7 +5,6 @@ PICAST 3 IS COMING... GET OLDER VERSIONS IN BRANCHES!
 
 
 !#/bin/bash
-#!/usr/bin/env node
 
 sudo apt-get update
 
