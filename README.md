@@ -19,3 +19,6 @@ So before you go nuts that the project isn't what YOU think, think twice. I do h
 
 python-dev python-pip nodejs npm youtube-dl lame mpg321
 
+<b>I WANT MY TIME/FREE EXCHANGE! WHO DO I COMPLAIN TO?</b>
+
+Easy does it... Tweet me, @LanceSeidman as that's the best chance of a response.
