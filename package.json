@@ -1,0 +1,25 @@
+{
+  "name": "PiCAST",
+  "version": "3.0.0",
+  "description": "PiCAST is a Chromecast-like Project",
+  "main": "picast.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified at this time, sorry!\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/lanceseidman/PiCAST"
+  },
+  "keywords": [
+    "picast",
+    "chromecast",
+    "raspberry pi",
+    "raspi"
+  ],
+  "author": "Lance Seidman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "sys": "0.0.1"
+  }
+}
