@@ -7,8 +7,9 @@ PICAST 3 IS COMING... GET OLDER VERSIONS IN BRANCHES!
 !#/bin/bash
 #!/usr/bin/env node
 
-// SETUP MIN. REQ.
 sudo apt-get update
+
 sudo apt-get upgrade
+
 sudo apt-get install python-dev python-pip nodejs npm
 
