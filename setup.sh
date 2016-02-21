@@ -39,3 +39,18 @@ cd ffmpeg
 sudo ./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree
 sudo make
 sudo make install
+
+# DOWNLOAD/INSTALL FOREVER TO KEEP PICAST RUNNING FOREVER... HAHA?
+sudo npm install forever -g
+sudo npm install forever-monitor -g
+
+# RUN PICAST FOR THE FIRST TIME...
+chmod +x picast_start.sh
+chmod +x picast_stop.sh
+
+echo "Goodbye from PiCAST3 Installer! In the future, run PiCAST3 from picast_start.sh..."
+pause 2
+echo "Remember, build upon PiCAST3 & make donations to lance@compulsivetech.biz via PayPal & Help Donate to Opportunity Village."
+pause 3
+echo "Launching PiCAST3 for the first time..."
+sh picast_start.sh
