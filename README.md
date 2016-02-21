@@ -22,7 +22,7 @@ Stop PiCAST: sh /path-to/PiCAST/picast_stop.sh
 
 BROWSER REQUESTS
 
-Stream YouTube Video: http://pi-ip:3000/yt-stream/<video id>
+Stream YouTube Video: http://pi-ip:3000/yt-stream/video-id
 
 
 <b>I WANT MORE COMMANDS!</b>
