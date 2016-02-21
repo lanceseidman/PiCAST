@@ -2,9 +2,13 @@
 PiCAST turns your $35 Raspberry Pi in to a Chromecast and beyond like Device.
 
 <b>GET/INSTALL PiCAST</b>
+
 1). Download the setup.sh file and in a terminal (on your Pi) type: chmod +x setup.sh
+
 2). After setup is done? Make sure it's running, in a browser visit: http://ip-to-your-Pi:3000.
+
 Note: PiCAST uses Forever which means PiCAST runs forever, UNTIL the Pi Reboots.
+
 3). Try streaming a YouTube Video by typing: http://ip-to-pi:3000/yt-stream/<YouTube Video ID>
 
 That's it! We've made PiCAST as easy and small as possible using web technologies. This will run easy on
@@ -22,11 +26,13 @@ Stream YouTube Video: http://pi-ip:3000/yt-stream/<video id>
 
 
 <b>I WANT MORE COMMANDS!</b>
+
 I've made PiCAST3 so simple, anyone can add/create his/her own feature they'd like BUT I do ask that you'd
 release it to the project so that everyone can enjoy your new features and so on. I have more coming, but
 this was just to get this edition out already.
 
 <b>MY PI REBOOTED, PICAST DOESN'T WORK!</b>
+
 As I mentioned before, once your Pi reboots you'll need to manually type the forever command (see above)
 OR you can just cd into the PiCAST Directory (e.g. cd /home/pi/PiCAST) and type: sh picast_start.sh OR
 just type & paste: sh /home/pi/PiCAST/picast_start.sh
