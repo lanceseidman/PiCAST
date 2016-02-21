@@ -11,10 +11,13 @@ That's it! We've made PiCAST as easy and small as possible using web technologie
 almost ANY Linux Distro as well that's Debian based or modify to run on RHEL/CENT.
 
 <b>PiCAST COMMANDS (CURRENT)</b>
+
 Start PiCAST: sh /path-to/PiCAST/picast_start.sh 
+
 Stop PiCAST: sh /path-to/PiCAST/picast_stop.sh 
 
 BROWSER REQUESTS
+
 Stream YouTube Video: http://pi-ip:3000/yt-stream/<video id>
 
 
