@@ -1,4 +1,4 @@
-# PiCAST 3 (MICRO EDITION; YOUTUBE FIRST)
+# PiCAST 3 (MICRO EDITION; STREAMING FIRST)
 PiCAST turns your $35 Raspberry Pi in to a Chromecast and beyond like Device.
 
 <b>GET/INSTALL PiCAST</b>
@@ -9,7 +9,7 @@ PiCAST turns your $35 Raspberry Pi in to a Chromecast and beyond like Device.
 
 Note: PiCAST uses Forever which means PiCAST runs forever, UNTIL the Pi Reboots.
 
-3). Try streaming a YouTube Video by typing: http://ip-to-pi:3000/yt-stream/<YouTube Video ID>
+3). Try streaming a Video (e.g. YouTube) by typing: http://ip-to-pi:3000/yt-stream/<YouTube Video ID>
 
 That's it! We've made PiCAST as easy and small as possible using web technologies. This will run easy on
 almost ANY Linux Distro as well that's Debian based or modify to run on RHEL/CENT.
