@@ -1,5 +1,24 @@
 #!/bin/sh
 ############################################
+
+test "$(id -u)" -eq "0" || { echo "Whao dude! You gotta run this type of thing as root! try: sudo $0" ; exit 1; }
+
+set -e
+
+finish() {
+    local exit_code=$?
+    # Tell the user something went wrong
+    test $exit_code -eq 0 || echo "Whao dude, something went wrong..."
+    # Possibly the user did not partition the sd card correctly and is running out of space
+    if df | grep "100%" ; then
+        echo "Whao dude, looks like you're all full"
+        df | grep 100%
+        echo "Maybe you need to repartition your sd card?"
+    fi
+    exit $exit_code
+}
+trap finish EXIT
+
 echo "Welcome to PiCAST 3! \n\n\n"
 
 echo "Performing Aptitude Update... \n"
