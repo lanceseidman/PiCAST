@@ -43,6 +43,7 @@ sudo make install
 # DOWNLOAD/INSTALL FOREVER TO KEEP PICAST RUNNING FOREVER... HAHA?
 sudo npm install forever -g
 sudo npm install forever-monitor -g
+sudo npm install express
 
 # GET PICAST NEEDED FILES...
 cd ~
