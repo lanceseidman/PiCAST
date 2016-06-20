@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 ############################################
 echo "Welcome to PiCAST 3! \n\n\n"
 
@@ -9,7 +10,7 @@ echo "Performing any upgrades (just in case)... \n"
 sudo apt-get upgrade
 
 echo "Ok, lets get to the requirements, bare with me... \n"
-sudo apt-get install python-dev python-pip nodejs npm youtube-dl lame mpg321 mplayer livestreamer git -y
+sudo apt-get install python-dev python-pip nodejs node-express npm youtube-dl lame mpg321 mplayer livestreamer git -y
 
 echo "I'm too lazy to check if all went well, so lets move on..."
 sleep 2
