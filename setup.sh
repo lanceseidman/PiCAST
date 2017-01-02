@@ -60,15 +60,15 @@ wget https://raw.githubusercontent.com/lanceseidman/PiCAST/master/picast_start.s
 wget https://raw.githubusercontent.com/lanceseidman/PiCAST/master/picast_stop.sh
 
 # INSTALL PICAST DAEMON
-read -p "Do you want to start PiCAST automatically on system boot? " -n 1 -r
+read -r -n 1 -p "Do you want to start PiCAST automatically on system boot? "
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   cd /etc/init.d
   echo "Getting PiCAST Daemon file..."
   sleep 1
-  wget https://raw.githubusercontent.com/lanceseidman/PiCAST/master/picast_daemon
-  mv picast_daemon picast
+  sudo wget https://raw.githubusercontent.com/lanceseidman/PiCAST/master/picast_daemon
+  sudo mv picast_daemon picast
   sudo chown root:root picast
   sudo chmod +x picast
   sudo update-rc.d picast defaults
