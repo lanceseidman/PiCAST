@@ -83,5 +83,9 @@ echo "Goodbye from PiCAST3 Installer! In the future, run PiCAST3 from picast_sta
 sleep 2
 echo "Remember, build upon PiCAST3 & make donations to lance@compulsivetech.biz via PayPal & Help Donate to Opportunity Village."
 sleep 3
+echo "Fixing node name error"
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+echo "Fixing missing express"
+sudo npm install express -g
 echo "Launching PiCAST3 for the first time..."
 sh picast_start.sh
