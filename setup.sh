@@ -20,11 +20,11 @@ sleep 3
 # We need to get H264 Support & FFMPEG on the system... Repo won't have it...
 
 # H264 Process...
-cd /usr/src
-sudo git clone git://git.videolan.org/x264
+cd /tmp
+git clone git://git.videolan.org/x264
 cd x264
-sudo ./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl
-sudo make
+./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl
+make
 sudo make install
 
 echo "\n \n I am now going to grab a copy of FFMPEG for MP3 & other reasons..."
@@ -33,11 +33,11 @@ echo "\n Understand, this would be a good time for coffee or tea... Going to be 
 sleep 2
 
 # Process for FFMPEG...
-cd /usr/src # We could have done cd.. but we're taking NO CHANCES...
-sudo git clone git://source.ffmpeg.org/ffmpeg.git
+cd /tmp
+git clone git://source.ffmpeg.org/ffmpeg.git
 cd ffmpeg
-sudo ./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree
-sudo make
+./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree
+make
 sudo make install
 
 # DOWNLOAD/INSTALL FOREVER TO KEEP PICAST RUNNING FOREVER... HAHA?
