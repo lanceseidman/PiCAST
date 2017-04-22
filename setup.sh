@@ -41,6 +41,12 @@ sudo make
 sudo make install
 
 # DOWNLOAD/INSTALL FOREVER TO KEEP PICAST RUNNING FOREVER... HAHA?
+echo "Downloading and installing node and express to run javascript..."
+wget http://node-arm.herokuapp.com/node_latest_armhf.deb 
+sudo dpkg -i node_latest_armhf.deb
+
+sudo npm install express
+echo "Downloading and installing forever to keep PiCAST running forever..."
 sudo npm install forever -g
 sudo npm install forever-monitor -g
 
