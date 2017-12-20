@@ -45,7 +45,7 @@ As Chromecast has changed over the past few years, my interest in this project w
 
 <b>THIS ISN'T CHROMECAST! YOU LIE!!!</b>
 
-As many seem unable to read or understand where the project CURRENTLY is and where it WILL go, I felt I need to dumb it down even more. This project doesn't have over 20-100+ paid-staffers, millions of dollars backed to ensure it succeeds, a dedicated team, and MONTHS & MONTHS of work where the PiCAST HAS NONE OF THE ABOVE-- so, calm down!
+As many seem unable to read or understand where the project CURRENTLY is and where it WILL go, I felt I need to dumb it down even more. Unlike Google, this project doesn't have over 20-100+ paid-staffers, millions of dollars backed to ensure it succeeds, a dedicated team, and MONTHS & MONTHS of work -- so, calm down!
 
 I made it very clear, this is "LIKE" a chromecast, as it can be sent commands REMOTELY just like the Chromecast (now via Browser/HTTP Request via CURL or even WGET)... I am working on the BEST possible method(s) to continue forward.
 
