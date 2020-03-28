@@ -1,4 +1,9 @@
-#!/bin/sh
+#!/usr/bin/env bash
+if [ "$EUID" -ne 0 ]
+then
+    echo -e "You need to run this script as root."
+    exit 1
+fi
 ############################################
 echo "Welcome to PiCAST 3! \n\n\n"
 
@@ -21,11 +26,10 @@ sleep 3
 
 # H264 Process...
 cd /usr/src
-sudo git clone git://git.videolan.org/x264
-cd x264
-sudo ./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl
-sudo make
-sudo make install
+sudo git clone git://git.videolan.org/x264 && cd x264 \
+&& sudo ./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl \
+&& sudo make \
+&& sudo make install
 
 echo "\n \n I am now going to grab a copy of FFMPEG for MP3 & other reasons..."
 sleep 1
@@ -50,6 +54,7 @@ echo "Making PiCAST Folder..."
 mkdir PiCAST
 echo "Entering PiCAST Folder..."
 cd PiCAST
+DIR=`pwd`
 
 echo "Getting PiCAST Server file..."
 sleep 1
@@ -72,16 +77,19 @@ then
   sudo chown root:root picast
   sudo chmod +x picast
   sudo update-rc.d picast defaults
-  cd ~
 fi
-
+cd $DIR
 # RUN PICAST FOR THE FIRST TIME...
 chmod +x picast_start.sh
 chmod +x picast_stop.sh
-
+echo "Node install dependencies"
+npm install
 echo "Goodbye from PiCAST3 Installer! In the future, run PiCAST3 from picast_start.sh..."
 sleep 2
 echo "Remember, build upon PiCAST3 & make donations to lance@compulsivetech.biz via PayPal & Help Donate to Opportunity Village."
-sleep 3
+sleep 2
 echo "Launching PiCAST3 for the first time..."
 sh picast_start.sh
+sleep 2
+echo -e "To quit server, just do: "\
+"sh picast_stop.sh"
