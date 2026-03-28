@@ -8,8 +8,14 @@ app.get('/', function (req, res) {
 });
 
 app.get('/yt-stream/:url', function (req, res) {
+        // Sanitize URL parameter to prevent command injection
+        var videoId = req.params.url.replace(/[^a-zA-Z0-9_-]/g, '');
+        if (!videoId) {
+                res.status(400).send('Invalid video ID');
+                return;
+        }
         res.send('Streaming YouTube Video...');
-        exec("livestreamer --player=mplayer https://www.youtube.com/watch?v=" + req.params.url + " best");
+        exec("livestreamer --player=mplayer https://www.youtube.com/watch?v=" + videoId + " best");
 });
 
 // Setup PiCAST Server
